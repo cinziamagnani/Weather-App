@@ -43,8 +43,38 @@ function displayTemperature(response) {
     iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
-let city = "Amsterdam";
-let apiKey = "0eb6de8e155714745cc3ba77875938d2";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
+function search(city) {
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
+    axios.get(apiUrl).then(displayTemperature);
+}
+
+function handleSubmit(event) {
+    event.preventDefault();
+    let cityInputElement = document.querySelector("#city-input");
+    search(cityInputElement.value);
+}
+
+function showPosition(position) {
+    latitude = position.coords.latitude;
+   longitude = position.coords.longitude;
+
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+   
 axios.get(apiUrl).then(displayTemperature);
+}
+
+function getLocal(event) {
+    event.preventDefault();
+    navigator.geolocation.getCurrentPosition(showPosition);
+}
+
+let apiKey = "0eb6de8e155714745cc3ba77875938d2";
+
+search("Amsterdam");
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
+
+let locationElement = document.querySelector("#location-btn");
+locationElement.addEventListener("click", getLocal);

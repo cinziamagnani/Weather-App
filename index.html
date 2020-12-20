@@ -12,6 +12,26 @@
 <body>
     <div class="container">
         <div class="weather-app">
+            <form id="search-form" class="mb-3">
+                <div class="row">
+                    <div class="col-8">
+                        <input type="search" 
+                        placeholder="Search for a city..." 
+                        class="form-control search-input"
+                        id="city-input">
+                    </div>
+                    <div class="col-2 search-btn">
+                        <button type="submit" class="btn btn-primary buttons">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                    <div class="col-2 loc">
+                        <button type="submit" class="btn btn-primary buttons" id="location-btn">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </button>
+                    </div>
+                    </div>
+            </form>
             <div class="overview">
                 <h2 id="city">
                     Amsterdam
@@ -73,7 +93,7 @@
                             km/h
                         </p>
         </div>
-        <p>
+        <p class="datetime">
             Last update: 
             <span id="datetime">
                 05:00, Sunday 20 December 

@@ -38,6 +38,7 @@ h1 {
 hr {
     border: 1px solid rgb(134,135,140);
 }
+
 .container {
     max-width: 600px;
     margin: 20px auto;
@@ -47,6 +48,25 @@ hr {
     border: 1px solid #dadde1;
     border-radius: 5px;
    background-color: #E5F0FC;
+}
+.col-8 {
+    padding-right: 0px;
+}
+.search-input {
+    padding-right: 0px;
+}
+.col-2 {
+    padding-right: 5px;
+}
+.buttons {
+    width: 72px;
+}
+.search-btn {
+    padding-right: 8px;
+}
+.loc {
+    padding-left: 8px;
+    padding-right: 15px;
 }
 .units {
     position: relative;
@@ -81,6 +101,9 @@ hr {
     position: relative;
     font-size: 10px;
     top: -5px;
+}
+.datetime {
+    font-size: 18px;
 }
 
 /*
