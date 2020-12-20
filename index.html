@@ -13,21 +13,26 @@
     <div class="container">
         <div class="weather-app">
             <div class="overview">
-                <h2>
+                <h2 id="city">
                     Amsterdam
                 </h2>
                 <img src="https://www.pngkey.com/png/full/829-8299660_orange-yellow-circle-vector-png.png" 
                 alt="sunny">
-                <h3>
+                <h3 id="description">
                     Sunny
                 </h3>
                 <h1>
-                    <strong>
+                    <strong id="temperature">
                         7
                     </strong>
                     <span class="units">
-                        <a href="#" id="celsius-link" class="active">°C</a> | 
-                        <a href="#" id="fahrenheit-link">°F</a>
+                        <a href="#" id="celsius-link" class="active">
+                            °C
+                        </a> | 
+                        <a href="#" id="fahrenheit-link">
+                            °F
+
+                        </a>
                     </span> 
                 </h1>
             </div>
@@ -35,24 +40,40 @@
             <div class="details">
             <div class="specifications">
                         <p class="cards">
-                            <i class="fas fa-thermometer-half emojis"></i>
-                            Feels like: 10
+                            <i class="fas fa-thermometer-half emojis">
+
+                            </i>
+                            Feels like:
+                            <span id="feels">
+                        </span>
                             <span class="units-small">
-                                <a href="#" id="celsius-link" class="active">°C</a> | 
-                                <a href="#" id="fahrenheit-link">°F</a>
+                                <a href="#" id="celsius-link" class="active">
+                                    °C
+                                </a> | 
+                                <a href="#" id="fahrenheit-link">
+                                    °F
+                                </a>
                             </span> 
                         </p>
                         <p class="cards">
-                            <i class="fas fa-tint emojis"></i>
-                            Humidity: 0%
+                            <i class="fas fa-tint emojis">
+                            </i>
+                            Humidity: 
+                            <span id="humidity">
+                            </span>
+                            %
                         </p>
                         <p class="cards">
-                            <i class="fas fa-wind emojis"></i>
-                            Wind: 2 km/h
+                            <i class="fas fa-wind emojis">
+                            </i>
+                            Wind: 
+                            <span id="wind">
+                            </span>
+                            km/h
                         </p>
         </div>
         <p>
-            Friday, 05:00 
+            Last update: 05:00, Sunday 20 December 
         </p>
     </div>
             <hr>
