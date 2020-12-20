@@ -49,6 +49,7 @@ hr {
     border-radius: 5px;
    background-color: #E5F0FC;
 }
+/*search engine spacing */
 .col-8 {
     padding-right: 0px;
 }
@@ -68,10 +69,19 @@ hr {
     padding-left: 8px;
     padding-right: 15px;
 }
+
+
 .units {
     position: relative;
     font-size: 20px;
     top: -46px;
+}
+.active {
+    color: rgb(33, 33, 33);
+    cursor: default;
+}
+.active:hover {
+    text-decoration: none;
 }
 .details {
     max-width: 460px;
