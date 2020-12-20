@@ -10,7 +10,7 @@ h2 {
     font-size: 35px;
     font-weight: 300;
     line-height: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 img {
     display: block;
@@ -20,7 +20,7 @@ img {
 }
 
 h3 {
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 10px;
     font-size: 25px;
 }
@@ -37,6 +37,10 @@ h1 {
 }
 hr {
     border: 1px solid rgb(134,135,140);
+}
+h4 {
+    font-size: 16px;
+    text-align: center;
 }
 
 .container {
@@ -114,6 +118,19 @@ hr {
 }
 .datetime {
     font-size: 18px;
+    text-align: center;
+}
+.weather-forecast img {
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: 5px auto;
+}
+.weather-forecast-temperature {
+    text-align: center;
+}
+.max-forecast-temp {
+    font-weight: 600;
 }
 
 /*
