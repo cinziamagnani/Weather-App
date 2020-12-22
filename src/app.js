@@ -55,7 +55,6 @@ function displayForecast(response) {
     let forecastElement = document.querySelector("#forecast");
     forecastElement.innerHTML = null;
     for (let i = 0; i<6; i++) {
-        console.log(response.data)
         forecast = response.data.list[i];
         forecastElement.innerHTML +=
         `<div class="col-2">
@@ -98,7 +97,7 @@ let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lo
    
 axios.get(apiUrl).then(displayTemperature);
 
-apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
+apiUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(displayForecast);
 }
 
